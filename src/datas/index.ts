@@ -54,7 +54,7 @@ export const socialLinks = [
   },
   {
     name: 'Email',
-    href: 'mailto:https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=emailanda@gmail.com',
+    href: 'mailto:https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=wupxy60@gmail.com',
     icon: '/assets/icons/email.svg',
   },
 ];
