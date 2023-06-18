@@ -32,29 +32,10 @@ export default function Portofolio() {
 
           <div className="grid gap-3 mt-10 tablet:grid-cols-2 laptop:gap-7 tablet-gap-5">
             <Card
-              title="tes"
-              description="tes"
-              image="/assets/images/growth.png"
-            />
-            <Card
-              title="tes"
-              description="tes"
-              image="/assets/images/growth.png"
-            />
-            <Card
-              title="tes"
-              description="tes"
-              image="/assets/images/growth.png"
-            />
-            <Card
-              title="tes"
-              description="tes"
-              image="/assets/images/growth.png"
-            />
-            <Card
-              title="tes"
-              description="tes"
-              image="/assets/images/growth.png"
+              title="MuAD School Profile"
+              description="Rebuild & increase performance MuAD School Profile Website with latest technology"
+              image="/assets/images/website_MuAD.png"
+              link="https://muadwebsite.vercel.app"
             />
           </div>
         </div>
