@@ -25,7 +25,7 @@ const Card: FC<CardProps> = ({ title, description, image, link }) => {
 
       <div className="flex flex-col gap-3 mt-5 tablet:gap-5">
         <p className="description">{description}</p>
-        <Link href={link}>
+        <Link href={link} rel="noopener noreferrer" target="_blank">
           <Button text="See Project" />
         </Link>
       </div>
