@@ -21,7 +21,7 @@ const components = {
   h2: ({ className, ...props }: ClassNameProps) => (
     <h2
       className={cn(
-        'mt-10 scroll-m-20 border-b pb-1 text-3xl font-semibold tracking-tight first:mt-0',
+        'mt-10 scroll-m-20 pb-1 text-3xl font-semibold tracking-tight first:mt-0',
         className
       )}
       {...props}
@@ -71,7 +71,7 @@ const components = {
   ),
   p: ({ className, ...props }: ClassNameProps) => (
     <p
-      className={cn('leading-7 [&:not(:first-child)]:mt-6', className)}
+      className={cn('leading-5 [&:not(:first-child)]:mt-6', className)}
       {...props}
     />
   ),

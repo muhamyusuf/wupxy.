@@ -8,13 +8,15 @@ export const metadata: Metadata = {
 };
 
 const Blog = () => {
+  const reversedDocs = allDocs.slice().reverse();
+
   return (
     <main>
       <div className="paddingY">
         <h1 className="heading1">Blog & Article</h1>
 
         <div className="flex flex-col paragraphContainer">
-          {allDocs.map((doc, index) => (
+          {reversedDocs.map((doc, index) => (
             <Link
               key={index}
               href={`${doc.slug}`}
