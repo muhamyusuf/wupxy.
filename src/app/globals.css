@@ -68,7 +68,7 @@ b {
 /* ========== Padding Structure ========== */
 
 .paddingY {
-  @apply py-4 tablet:py-8;
+  @apply py-4 mb-10 tablet:py-8;
 }
 
 /* ========== Padding Structure ========== */
