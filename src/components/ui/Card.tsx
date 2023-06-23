@@ -18,7 +18,7 @@ const Card: FC<CardProps> = ({ title, description, image, link }) => {
         alt={title}
         width={858}
         height={572}
-        className="object-cover w-auto h-auto border-2 rounded-lg aspect-full"
+        className="object-cover w-full h-[200px] border-2 rounded-lg aspect-full"
         priority
       />
       <h3 className="mt-5 heading3">{title}</h3>
