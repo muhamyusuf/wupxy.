@@ -47,9 +47,16 @@ export default function Portofolio() {
 
             <Card
               title="Et-Bien Website"
-              description="Make landing page with high quality design and best layout"
+              description="Make landing page with high quality design and best layout for user experience"
               image="/assets/images/etbien-website.png"
               link="https://et-bien.vercel.app"
+            />
+
+            <Card
+              title="Simplicity"
+              description="Landing page with animation, gradient color and high quality design"
+              image="/assets/images/simplicity-website.png"
+              link="https://simplicitydesign.vercel.app"
             />
           </div>
         </div>
