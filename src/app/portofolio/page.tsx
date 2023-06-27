@@ -55,7 +55,7 @@ export default function Portofolio() {
             <Card
               title="Simplicity"
               description="Landing page with animation, gradient color and high quality design"
-              image="/assets/images/simplicity-website.png"
+              image="/assets/images/simplicity-website.jpg"
               link="https://simplicitydesign.vercel.app"
             />
           </div>
