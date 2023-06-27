@@ -14,6 +14,7 @@ export default function Home() {
             height={150}
             className="object-cover rounded-full w-30 h-30 aspect-square grayscale"
           />
+
           <div className="flex flex-col">
             <h1 className="heading1">Muhammad Yusuf</h1>
             <p className="mt-1 description">Web developer</p>

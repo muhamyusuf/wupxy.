@@ -37,11 +37,19 @@ export default function Portofolio() {
               image="/assets/images/website_MuAD.png"
               link="https://muadwebsite.vercel.app"
             />
+
             <Card
               title="Unwind Community"
               description="Build this awesome fullstack website with awesome logic and concistency of design"
               image="/assets/images/unwind_website.png"
               link="https://unwind-community.vercel.app"
+            />
+
+            <Card
+              title="Et-Bien Website"
+              description="Make landing page with high quality design and best layout"
+              image="/assets/images/etbien-website.png"
+              link="https://et-bien.vercel.app"
             />
           </div>
         </div>

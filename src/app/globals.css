@@ -32,10 +32,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* Design System */
-
-/* ========== Font Structure ========== */
-
 .heading1 {
   @apply text-2xl font-extrabold tablet:text-4xl font-amiko;
 }
@@ -63,20 +59,10 @@ b {
   @apply text-white;
 }
 
-/* ========== Font Structure ========== */
-
-/* ========== Padding Structure ========== */
-
 .paddingY {
   @apply py-4 mb-10 tablet:py-8;
 }
 
-/* ========== Padding Structure ========== */
-
-/* ========== paragraph ========== */
-
 .paragraphContainer {
   @apply mt-5 tablet:mt-14 max-w-[720px] flex flex-col gap-5;
 }
-
-/* ========== paragraph ========== */

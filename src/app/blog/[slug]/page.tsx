@@ -33,6 +33,7 @@ const Docs = async ({ params }: PageProps) => {
         <p className="descriptionBlog">{doc.description}</p>
         <p className="text-[12px] text-gray">Published at {doc.date}</p>
       </div>
+
       <div className="w-full h-[0.5px] bg-gray"></div>
 
       <div className="text-justify paragraphContainer descriptionBlog">
