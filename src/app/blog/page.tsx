@@ -8,7 +8,13 @@ export const metadata: Metadata = {
 };
 
 const Blog = () => {
-  const reversedDocs = allDocs.slice().reverse();
+  const sortedDocs = allDocs.slice().sort((a, b) => {
+    // Ganti 'publishedAt' dengan properti yang sesuai untuk mengurutkan berdasarkan tanggal
+    if (new Date(a.date) > new Date(b.date)) {
+      return -1;
+    }
+    return 1;
+  });
 
   return (
     <main>
@@ -16,7 +22,7 @@ const Blog = () => {
         <h1 className="heading1">Blog & Article</h1>
 
         <div className="flex flex-col paragraphContainer">
-          {reversedDocs.map((doc, index) => (
+          {sortedDocs.map((doc, index) => (
             <Link
               key={index}
               href={`${doc.slug}`}
