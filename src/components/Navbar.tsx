@@ -18,7 +18,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
     'text-gray hover:text-white opacity-80 hover:opacity-100 transition duration-100 ease-in-out rounded-lg hover:text-white';
 
   return (
-    <nav className="fixed h-[8%] tablet:h-full bottom-0 w-full laptop:max-w-[320px] tablet:max-w-[200px] flex tablet:justify-end justify-center items-center pt-0 tablet:pt-[100px] laptop:pt-[200px] tablet:items-start font-amiko px-2 tablet:px-4 rounded-lg backdrop-blur-sm tablet:backdrop-blur-none">
+    <nav className="fixed h-[8%] tablet:h-full bottom-0 w-full laptop:max-w-[320px] tablet:max-w-[200px] flex tablet:justify-end justify-center items-center pt-0 tablet:pt-[100px] laptop:pt-[200px] tablet:items-start font-amiko px-2 tablet:px-4 rounded-lg backdrop-blur-sm tablet:backdrop-blur-none z-50">
       <div className="flex flex-row gap-5 text-sm tablet:flex-col tablet:text-xl">
         <Link
           href="/"
