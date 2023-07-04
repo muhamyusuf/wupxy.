@@ -9,10 +9,18 @@ interface PageProps {
   };
 }
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Blog || Wupxy',
-};
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata | undefined> {
+  const doc = allDocs.find((doc) => doc.slugAsParams === params.slug);
+
+  if (!doc) return;
+
+  return {
+    title: doc.title,
+    description: doc.description,
+  };
+}
 
 async function getDocsFromParams(slug: string) {
   const doc = allDocs.find((doc) => doc.slugAsParams === slug);
