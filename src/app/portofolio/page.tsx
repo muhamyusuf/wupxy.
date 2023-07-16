@@ -1,4 +1,5 @@
 import Card from '@/components/ui/Card';
+import { portofolio } from '@/datas';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,39 +26,21 @@ export default function Portofolio() {
           </p>
         </div>
 
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <h2 className="mt-10 font-bold text-center heading2">
             Current projects
           </h2>
 
-          <div className="grid gap-3 mt-10 tablet:grid-cols-2 laptop:gap-7 tablet-gap-5">
-            <Card
-              title="MuAD School Profile"
-              description="Rebuild & increase performance MuAD School Profile Website with latest technology"
-              image="/assets/images/website_MuAD.png"
-              link="https://muadwebsite.vercel.app"
-            />
-
-            <Card
-              title="Unwind Community"
-              description="Build this awesome fullstack website with awesome logic and concistency of design"
-              image="/assets/images/unwind_website.png"
-              link="https://unwind-community.vercel.app"
-            />
-
-            <Card
-              title="Et-Bien Website"
-              description="Make landing page with high quality design and best layout for user experience"
-              image="/assets/images/etbien-website.png"
-              link="https://et-bien.vercel.app"
-            />
-
-            <Card
-              title="Simplicity"
-              description="Landing page with animation, gradient color and high quality design"
-              image="/assets/images/simplicity-website.jpg"
-              link="https://simplicitydesign.vercel.app"
-            />
+          <div className="grid gap-3 mt-10 tablet:grid-cols-1 laptop:grid-cols-2 laptop:gap-7 tablet-gap-5">
+            {portofolio.map((item, index) => (
+              <Card
+                key={index}
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                link={item.link}
+              />
+            ))}
           </div>
         </div>
       </div>
