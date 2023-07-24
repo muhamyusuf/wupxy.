@@ -49,9 +49,6 @@ b {
 .textGradient {
   @apply text-transparent bg-gradient-to-r from-army to-blue bg-clip-text;
 }
-.textGradientRev {
-  @apply text-transparent bg-gradient-to-r from-blue to-army bg-clip-text;
-}
 
 .paddingY {
   @apply py-4 mb-10 tablet:py-8;

@@ -17,20 +17,6 @@ export const Navlinks = [
   },
 ];
 
-export const Works = [
-  {
-    title: 'MuAD Company Profile',
-    category: 'Web Development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    image: '/images/works/web-development.svg',
-    date: '2021',
-  },
-  {
-    title: '',
-  },
-];
-
 export const socialLinks = [
   {
     name: 'Github',

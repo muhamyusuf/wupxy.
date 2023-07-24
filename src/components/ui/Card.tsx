@@ -22,7 +22,7 @@ const Card: FC<CardProps> = ({ title, description, image, link }) => {
         priority
       />
 
-      <h3 className="mt-5 heading3">{title}</h3>
+      <h3 className="mt-5">{title}</h3>
 
       <div className="flex flex-col gap-3 justify-between mt-5 min-h-[150px] tablet:gap-5">
         <p className="description">{description}</p>

@@ -13,10 +13,11 @@ export default function Home() {
             width={150}
             height={150}
             className="object-cover rounded-full w-30 h-30 aspect-square grayscale"
+            priority
           />
 
           <div className="flex flex-col">
-            <h1 className="heading1">Muhammad Yusuf</h1>
+            <h1>Muhammad Yusuf</h1>
             <p className="mt-1 description">Web developer</p>
           </div>
         </div>
