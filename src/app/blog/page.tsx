@@ -19,7 +19,7 @@ const Blog = () => {
   return (
     <main>
       <div className="paddingY">
-        <h1 className="heading1">Blog & Article</h1>
+        <h1>Blog & Article</h1>
 
         <div className="flex flex-col paragraphContainer">
           {sortedDocs.map((doc, index) => (

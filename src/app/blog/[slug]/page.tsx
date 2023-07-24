@@ -35,7 +35,7 @@ const Docs = async ({ params }: PageProps) => {
 
   return (
     <div className="paddingY">
-      <h1 className="heading1">{doc.title}</h1>
+      <h1>{doc.title}</h1>
 
       <div className="flex items-center justify-between gap-2">
         <p className="descriptionBlog">{doc.description}</p>

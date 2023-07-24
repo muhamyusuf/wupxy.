@@ -61,9 +61,16 @@ export const socialLinks = [
 
 export const portofolio = [
   {
+    title: 'TweetLineer',
+    description:
+      'Menfess website for Informatics Engineering Students to share their opinion about organization, campus, and others',
+    image: '/assets/images/tweetlineer.png',
+    link: 'https://tweetlineer.vercel.app',
+  },
+  {
     title: 'Informatics Resources',
     description:
-      'Open Sources documentation website for Informatics Engineering Students (Still Progress :D)',
+      'Open Sources documentation website for Informatics Engineering Students',
     image: '/assets/images/informatics-resources.png',
     link: 'https://informatics-resources.vercel.app',
   },

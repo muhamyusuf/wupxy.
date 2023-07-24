@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
-import Button from './Button';
+import { Button } from '@/components/ui/Button';
 
 interface CardProps {
   title: string;
@@ -18,17 +18,21 @@ const Card: FC<CardProps> = ({ title, description, image, link }) => {
         alt={title}
         width={858}
         height={572}
-        className="object-cover w-full h-[200px] border-2 rounded-lg aspect-full"
+        className="object-cover w-full h-[200px] border-2 rounded-md aspect-full"
         priority
       />
 
       <h3 className="mt-5 heading3">{title}</h3>
 
-      <div className="flex flex-col gap-3 mt-5 tablet:gap-5">
+      <div className="flex flex-col gap-3 justify-between mt-5 min-h-[150px] tablet:gap-5">
         <p className="description">{description}</p>
-        <Link href={link} rel="noopener noreferrer" target="_blank">
-          <Button text="See Project" />
-        </Link>
+
+        <div className="flex gap-2">
+          <Link href={link} rel="noopener noreferrer" target="_blank">
+            <Button>See Projects</Button>
+          </Link>
+          <Button variant="outline">Details</Button>
+        </div>
       </div>
     </div>
   );

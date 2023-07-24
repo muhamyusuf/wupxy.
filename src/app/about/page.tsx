@@ -10,7 +10,7 @@ export default function About() {
   return (
     <main>
       <div className="paddingY">
-        <h1 className="heading1">About</h1>
+        <h1>About</h1>
 
         <div className="paragraphContainer">
           <p className="description">

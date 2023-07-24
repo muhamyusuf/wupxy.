@@ -1,4 +1,4 @@
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -41,7 +41,7 @@ export default function Home() {
           <p className="description">Interest with me ?</p>
 
           <Link href="/contact" className="mt-5">
-            <Button text="Get in touch" />
+            <Button>Get in touch</Button>
           </Link>
         </div>
       </div>

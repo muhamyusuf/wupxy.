@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <main>
       <div className="paddingY">
-        <h1 className="heading1">Contact</h1>
+        <h1>Contact</h1>
 
         <div className="paragraphContainer">
           <p className="description">

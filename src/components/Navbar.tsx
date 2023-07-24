@@ -1,14 +1,12 @@
 'use client';
 
 import { Navlinks } from '@/datas';
-import { FC } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-interface NavbarProps {}
-
-const Navbar: FC<NavbarProps> = ({}) => {
+export default function Navbar() {
   let pathName = usePathname();
+
   if (pathName.includes('/blog/')) {
     pathName = '/blog';
   }
@@ -39,6 +37,4 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
