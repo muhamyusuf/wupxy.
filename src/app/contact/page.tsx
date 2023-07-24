@@ -33,6 +33,7 @@ export default function Contact() {
                   width={50}
                   height={50}
                   className="object-cover w-auto h-auto p-1 cursor-pointer"
+                  priority
                 />
               </Link>
             ))}
