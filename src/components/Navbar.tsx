@@ -22,7 +22,8 @@ export default function Navbar() {
           href="/"
           className="font-extrabold rounded-lg tablet:mb-10 textGradient font-poppin"
         >
-          <p>Wupxy.</p>
+          <p className="hidden tablet:inline">Wupxy.</p>
+          <p className="inline tablet:hidden">W</p>
         </Link>
 
         {Navlinks.map((link, index) => (
