@@ -63,7 +63,7 @@ export const portofolio = [
   {
     title: 'Satu.Rasa_',
     description:
-      'Website Satu.Rasa_ business to share their projects, gallery, and others as photographer',
+      'Satu.Rasa_ profil page to showcase their projects, gallery, and others as photographer',
     image: '/assets/images/satu-rasa.png',
     link: 'https://satu-rasa.vercel.app',
   },
