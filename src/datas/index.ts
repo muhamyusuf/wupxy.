@@ -61,11 +61,11 @@ export const portofolio = [
     link: 'https://informatics-resources.vercel.app',
   },
   {
-    title: 'Et-Bien Website',
+    title: 'Satu.Rasa_',
     description:
-      'Make landing page with high quality design and best layout for user experience',
-    image: '/assets/images/etbien-website.png',
-    link: 'https://et-bien.vercel.app',
+      'Website Satu.Rasa_ business to share their projects, gallery, and others as photographer',
+    image: '/assets/images/satu-rasa.png',
+    link: 'https://satu-rasa.vercel.app',
   },
   {
     title: 'Unwind Community',
@@ -80,6 +80,13 @@ export const portofolio = [
       'Rebuild & increase performance MuAD School Profile Website with latest technology',
     image: '/assets/images/website_MuAD.png',
     link: 'https://muadwebsite.vercel.app',
+  },
+  {
+    title: 'Et-Bien Website',
+    description:
+      'Make landing page with high quality design and best layout for user experience',
+    image: '/assets/images/etbien-website.png',
+    link: 'https://et-bien.vercel.app',
   },
   {
     title: 'Simplicity',

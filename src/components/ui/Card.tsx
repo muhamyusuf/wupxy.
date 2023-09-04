@@ -31,7 +31,6 @@ const Card: FC<CardProps> = ({ title, description, image, link }) => {
           <Link href={link} rel="noopener noreferrer" target="_blank">
             <Button>See Projects</Button>
           </Link>
-          <Button variant="outline">Details</Button>
         </div>
       </div>
     </div>
