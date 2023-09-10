@@ -65,15 +65,15 @@ const components = {
   ),
   a: ({ className, ...props }: ClassNameProps) => (
     <a
-      className={cn('font-medium underline underline-offset-4', className)}
+      className={cn(
+        'font-medium underline underline-offset-4 hover:opacity-80 duration-200 transition-all ease-in-out',
+        className
+      )}
       {...props}
     />
   ),
   p: ({ className, ...props }: ClassNameProps) => (
-    <p
-      className={cn('leading-5 [&:not(:first-child)]:mt-6', className)}
-      {...props}
-    />
+    <p className={cn('leading-5', className)} {...props} />
   ),
   ul: ({ className, ...props }: ClassNameProps) => (
     <ul className={cn('my-6 ml-6 list-disc', className)} {...props} />
@@ -82,7 +82,7 @@ const components = {
     <ol className={cn('my-6 ml-6 list-decimal', className)} {...props} />
   ),
   li: ({ className, ...props }: ClassNameProps) => (
-    <li className={cn('mt-2', className)} {...props} />
+    <li className={cn(className)} {...props} />
   ),
   blockquote: ({ className, ...props }: ClassNameProps) => (
     <blockquote

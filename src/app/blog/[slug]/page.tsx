@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronLeftCircle } from 'lucide-react';
+import { buttonVariants } from '@/components/ui/Button';
 
 interface PageProps {
   params: {
@@ -37,22 +38,39 @@ const Docs = async ({ params }: PageProps) => {
 
   return (
     <div className="paddingY">
-      <Link href="/portofolio" className="flex items-center gap-2">
+      <Link
+        href="/blog"
+        className={`flex items-center gap-2 -ml-4 ${buttonVariants({
+          variant: 'ghost',
+        })}`}
+      >
         <ChevronLeftCircle /> <span className="mb-1 text-xl">Back</span>
       </Link>
 
       <h1 className="mt-10">{doc.title}</h1>
 
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex flex-col justify-between gap-2 mt-5 tablet:items-center tablet:flex-row">
         <p className="descriptionBlog">{doc.description}</p>
         <p className="text-[12px] text-gray">Published at {doc.date}</p>
       </div>
 
       <div className="w-full h-[0.5px] bg-gray"></div>
 
-      <div className="text-justify paragraphContainer descriptionBlog">
+      <div className="paragraphContainer descriptionBlog">
         <Mdx code={doc.body.code} />
       </div>
+
+      <Link
+        href="/blog"
+        className={`flex items-center gap-2 mx-auto w-full mt-10 ${buttonVariants(
+          {
+            variant: 'ghost',
+          }
+        )}`}
+      >
+        <ChevronLeftCircle />{' '}
+        <span className="mb-1 text-xl">List All Blog</span>
+      </Link>
     </div>
   );
 };

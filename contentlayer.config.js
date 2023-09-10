@@ -55,6 +55,9 @@ export const PortoDetail = defineDocumentType(() => ({
     date: {
       type: 'string',
     },
+    github: {
+      type: 'string',
+    },
   },
   computedFields,
 }));

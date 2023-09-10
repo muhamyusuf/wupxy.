@@ -21,7 +21,7 @@ const Blog = () => {
       <div className="paddingY">
         <h1>Blog & Article</h1>
 
-        <div className="flex flex-col paragraphContainer">
+        <div className="flex flex-col mt-10 -ml-2">
           {sortedDocs.map((doc, index) => (
             <Link
               key={index}
