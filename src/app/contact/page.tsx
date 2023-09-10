@@ -17,7 +17,7 @@ export default function Contact() {
 
         <div className="paragraphContainer">
           <p className="description">
-            Click this social icons to connect with me &#10084;
+            Click this social icons to connect, collab, or hiring me &#10084;
           </p>
 
           <div className="flex items-center justify-start gap-3">
@@ -26,6 +26,8 @@ export default function Contact() {
                 key={index}
                 href={social.href}
                 className="transition duration-200 ease-in-out opacity-80 hover:opacity-100"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <Image
                   src={social.icon}

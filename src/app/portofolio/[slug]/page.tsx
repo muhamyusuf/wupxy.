@@ -1,5 +1,5 @@
 import { Mdx } from '@/components/Mdx';
-import { allDocs } from 'contentlayer/generated';
+import { allPortoDetails } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ interface PageProps {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata | undefined> {
-  const doc = allDocs.find((doc) => doc.slugAsParams === params.slug);
+  const doc = allPortoDetails.find((doc) => doc.slugAsParams === params.slug);
 
   if (!doc) return;
 
@@ -25,14 +25,14 @@ export async function generateMetadata({
 }
 
 async function getDocsFromParams(slug: string) {
-  const doc = allDocs.find((doc) => doc.slugAsParams === slug);
+  const doc = allPortoDetails.find((doc) => doc.slugAsParams === slug);
 
   if (!doc) notFound();
 
   return doc;
 }
 
-const Docs = async ({ params }: PageProps) => {
+const PortoDetail = async ({ params }: PageProps) => {
   const doc = await getDocsFromParams(params.slug);
 
   return (
@@ -57,4 +57,4 @@ const Docs = async ({ params }: PageProps) => {
   );
 };
 
-export default Docs;
+export default PortoDetail;

@@ -25,7 +25,7 @@ export const socialLinks = [
   },
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/wupxy___/?igshid=MzNlNGNkZWQ4Mg%3D%3D',
+    href: 'https://www.instagram.com/wupxy.tech/',
     icon: '/assets/icons/instagram.svg',
   },
   {
@@ -82,7 +82,7 @@ export const portofolio = [
     link: 'https://muadwebsite.vercel.app',
   },
   {
-    title: 'Et-Bien Website',
+    title: 'EtBien Website',
     description:
       'Make landing page with high quality design and best layout for user experience',
     image: '/assets/images/etbien-website.png',

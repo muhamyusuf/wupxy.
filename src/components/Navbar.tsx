@@ -9,6 +9,8 @@ export default function Navbar() {
 
   if (pathName.includes('/blog/')) {
     pathName = '/blog';
+  } else if (pathName.includes('/portofolio/')) {
+    pathName = '/portofolio';
   }
 
   const activePath = 'text-white';
@@ -20,7 +22,7 @@ export default function Navbar() {
       <div className="flex flex-row gap-5 text-sm tablet:flex-col tablet:text-xl">
         <Link
           href="/"
-          className="font-extrabold rounded-lg tablet:mb-10 textGradient font-poppin"
+          className="font-extrabold rounded-lg tablet:mb-10 font-poppin"
         >
           <p className="hidden tablet:inline">Wupxy.</p>
           <p className="inline tablet:hidden">W</p>

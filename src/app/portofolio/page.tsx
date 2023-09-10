@@ -1,10 +1,19 @@
 import Card from '@/components/ui/Card';
 import { portofolio } from '@/datas';
 import { Metadata } from 'next';
+import { allPortoDetails } from 'contentlayer/generated';
 
 export const metadata: Metadata = {
   title: 'Portofolio',
   description: 'Portofolio || Wupxy',
+};
+
+const checkTitle = (titlePorto: string) => {
+  const matchTitle = allPortoDetails.find(
+    (doc) => doc.title === titlePorto
+  )?.title;
+
+  return matchTitle;
 };
 
 export default function Portofolio() {
@@ -37,6 +46,7 @@ export default function Portofolio() {
                 description={item.description}
                 image={item.image}
                 link={item.link}
+                isCurrent={checkTitle(item.title)}
               />
             ))}
           </div>

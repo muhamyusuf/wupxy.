@@ -46,10 +46,6 @@ b {
   @apply font-normal text-[14px] text-gray font-poppins;
 }
 
-.textGradient {
-  @apply text-transparent bg-gradient-to-r from-army to-blue bg-clip-text;
-}
-
 .paddingY {
   @apply py-4 mb-10 tablet:py-8;
 }

@@ -19,10 +19,8 @@ module.exports = {
         laptop: '1024px',
       },
       colors: {
-        black: '#000000',
+        black: '#18181b',
         white: '#ffffff',
-        blue: '#001462',
-        army: '#003E13',
         gray: '#c7c7c7',
       },
       fontFamily: {

@@ -25,10 +25,9 @@ export default function Home() {
         <div className="paragraphContainer">
           <p className="description">
             I&lsquo;m a freelance web developer. I can enhance the{' '}
-            <b className="textGradient">QUALITY</b> of your website in terms of{' '}
-            <b className="textGradient">DESIGN</b> and{' '}
-            <b className="textGradient">PERFORMANCE</b> using constantly updated
-            technologies that keep up with the latest trends.
+            <b>QUALITY</b> of your website in terms of <b>DESIGN</b> and{' '}
+            <b>PERFORMANCE</b> using constantly updated technologies that keep
+            up with the latest trends.
           </p>
 
           <p className="description">
