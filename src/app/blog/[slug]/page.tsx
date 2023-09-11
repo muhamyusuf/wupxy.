@@ -49,7 +49,7 @@ const Docs = async ({ params }: PageProps) => {
 
       <h1 className="mt-10">{doc.title}</h1>
 
-      <div className="flex flex-col justify-between gap-2 mt-5 tablet:items-center tablet:flex-row">
+      <div className="flex flex-col justify-between gap-2 mt-5 laptop:items-center laptop:flex-row">
         <p className="descriptionBlog">{doc.description}</p>
         <p className="text-[12px] text-gray">Published at {doc.date}</p>
       </div>

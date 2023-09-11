@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronLeftCircle } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/Button';
+import LinkPorto from '@/components/ui/LinkPorto';
 
 interface PageProps {
   params: {
@@ -49,12 +50,14 @@ const PortoDetail = async ({ params }: PageProps) => {
 
       <h1 className="mt-10">{doc.title}</h1>
 
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex flex-col justify-between gap-2 mt-5 laptop:items-center laptop:flex-row">
         <p className="descriptionBlog">{doc.description}</p>
         <p className="text-[12px] text-gray">Published at {doc.date}</p>
       </div>
 
       <div className="w-full h-[0.5px] bg-gray"></div>
+
+      {doc.github ? <LinkPorto className="mt-5" link={doc.github} /> : null}
 
       <div className="text-justify paragraphContainer descriptionBlog">
         <Mdx code={doc.body.code} />

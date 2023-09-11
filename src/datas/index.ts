@@ -73,6 +73,7 @@ export const portofolio = [
       'Build this awesome fullstack website with awesome logic and concistency of design',
     image: '/assets/images/unwind_website.png',
     link: 'https://unwind-community.vercel.app',
+    github: 'https://github.com/muhamyusuf/unwind',
   },
   {
     title: 'MuAD School Profile',
@@ -80,6 +81,7 @@ export const portofolio = [
       'Rebuild & increase performance MuAD School Profile Website with latest technology',
     image: '/assets/images/website_MuAD.png',
     link: 'https://muadwebsite.vercel.app',
+    github: 'https://github.com/muhamyusuf/MuAD',
   },
   {
     title: 'EtBien Website',
@@ -87,6 +89,7 @@ export const portofolio = [
       'Make landing page with high quality design and best layout for user experience',
     image: '/assets/images/etbien-website.png',
     link: 'https://et-bien.vercel.app',
+    github: 'https://github.com/muhamyusuf/et-bien',
   },
   {
     title: 'Simplicity',
@@ -94,5 +97,6 @@ export const portofolio = [
       'Landing page with animation, gradient color and high quality design',
     image: '/assets/images/simplicity-website.jpg',
     link: 'https://simplicitydesign.vercel.app',
+    github: 'https://github.com/muhamyusuf/simplicity',
   },
 ];
