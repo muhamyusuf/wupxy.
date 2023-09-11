@@ -30,7 +30,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "public/index.js",
-    "public/index.js"
+    "public/index.js",
+    ".contentlayer/generated"
   ],
   "exclude": ["node_modules"]
 }
