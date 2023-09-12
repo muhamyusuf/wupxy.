@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="scrollbar-none">
         <div className="container relative flex items-center">
           <Navbar />
 
