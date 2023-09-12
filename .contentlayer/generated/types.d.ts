@@ -32,6 +32,7 @@ export type PortoDetail = {
   description?: string | undefined
   date?: string | undefined
   github?: string | undefined
+  liveDemo?: string | undefined
   /** MDX file body */
   body: MDX
   slug: string

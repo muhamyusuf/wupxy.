@@ -58,6 +58,9 @@ export const PortoDetail = defineDocumentType(() => ({
     github: {
       type: 'string',
     },
+    liveDemo: {
+      type: 'string',
+    },
   },
   computedFields,
 }));

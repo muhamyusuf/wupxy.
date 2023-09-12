@@ -22,7 +22,10 @@ const Card: FC<CardProps> = ({
   const isCurrentValid = isCurrent?.replace(/\s/g, '-');
 
   return (
-    <Link href={`portofolio/${isCurrentValid}`}>
+    <Link
+      href={`portofolio/${isCurrentValid}`}
+      className="transition duration-300 hover:opacity-80 group"
+    >
       <div className="w-full border rounded-lg shadow-lg border-gray/10">
         <div className="p-2">
           <Image

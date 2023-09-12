@@ -57,7 +57,13 @@ const PortoDetail = async ({ params }: PageProps) => {
 
       <div className="w-full h-[0.5px] bg-gray"></div>
 
-      {doc.github ? <LinkPorto className="mt-5" link={doc.github} /> : null}
+      {doc.github || doc.liveDemo ? (
+        <LinkPorto
+          className="mt-5"
+          linkGithub={doc.github}
+          linkDemo={doc.liveDemo}
+        />
+      ) : null}
 
       <div className="text-justify paragraphContainer descriptionBlog">
         <Mdx code={doc.body.code} />
