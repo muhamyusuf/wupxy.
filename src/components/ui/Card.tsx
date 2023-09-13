@@ -2,23 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 import { Button } from '@/components/ui/Button';
-import { ExternalLink } from 'lucide-react';
 
 interface CardProps {
   title: string;
   description: string;
   image: string;
-  link: string;
   isCurrent?: string;
 }
 
-const Card: FC<CardProps> = ({
-  title,
-  description,
-  image,
-  link,
-  isCurrent,
-}) => {
+const Card: FC<CardProps> = ({ title, description, image, isCurrent }) => {
   const isCurrentValid = isCurrent?.replace(/\s/g, '-');
 
   return (
@@ -45,12 +37,6 @@ const Card: FC<CardProps> = ({
             <div className="flex gap-2">
               <Link href={`portofolio/${isCurrentValid}`}>
                 <Button>See Projects</Button>
-              </Link>
-
-              <Link href={link} rel="noopener noreferrer" target="_blank">
-                <Button>
-                  <ExternalLink />
-                </Button>
               </Link>
             </div>
           </div>

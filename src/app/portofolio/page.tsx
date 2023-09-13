@@ -45,7 +45,6 @@ export default function Portofolio() {
                 title={item.title}
                 description={item.description}
                 image={item.image}
-                link={item.link}
                 isCurrent={checkTitle(item.title)}
               />
             ))}

@@ -40,7 +40,7 @@ export const socialLinks = [
   },
   {
     name: 'Email',
-    href: 'mailto:wupxy60@gmail.com',
+    href: 'mailto:wupxy.tech@gmail.com',
     icon: '/assets/icons/email.svg',
   },
 ];
