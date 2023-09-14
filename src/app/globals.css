@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@700&family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  @apply bg-black;
+}
+
+h1 {
+  @apply text-2xl font-extrabold tablet:text-4xl font-amiko;
+}
+h2 {
+  @apply text-xl font-bold tablet:text-2xl font-amiko;
+}
+h3 {
+  @apply text-lg font-semibold tablet:text-xl font-poppins;
+}
+b {
+  @apply text-white;
+}
+.description {
+  @apply text-[16px] font-normal text-gray font-poppins;
+}
+.descriptionBlog {
+  @apply font-normal text-[14px] text-gray font-poppins;
+}
+
+.paddingY {
+  @apply py-4 mb-10 tablet:py-8;
+}
+
+.paragraphContainer {
+  @apply mt-5 tablet:mt-14 max-w-[720px] flex flex-col gap-5;
+}
