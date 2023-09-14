@@ -11,4 +11,7 @@ My own portfolio website, build with latest tech stack.
 
 1. Free to use for inspiration
 2. Do not copy it directly
+<<<<<<< HEAD
 3. Credit Author is apreciate
+=======
+>>>>>>> 8cb66d9b2c1106010d13e31db215f16d56b6fce9
