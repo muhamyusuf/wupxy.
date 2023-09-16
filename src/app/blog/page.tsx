@@ -29,7 +29,7 @@ const Blog = () => {
               className="flex items-center justify-between gap-4 px-2 py-2 transition duration-200 ease-in-out opacity-80 hover:opacity-100 hover:text-white"
             >
               <div>
-                <h2>{doc.title}</h2>
+                <h2 className="text-white">{doc.title}</h2>
                 <p className="descriptionBlog">{doc.description}</p>
               </div>
 
