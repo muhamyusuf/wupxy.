@@ -45,7 +45,8 @@ const PortoDetail = async ({ params }: PageProps) => {
           variant: 'ghost',
         })}`}
       >
-        <ChevronLeftCircle /> <span className="mb-1 text-xl">Back</span>
+        <ChevronLeftCircle />{' '}
+        <span className="mb-[2px] tablet:text-xl text-lg">Back</span>
       </Link>
 
       <h1 className="mt-10">{doc.title}</h1>
@@ -78,7 +79,9 @@ const PortoDetail = async ({ params }: PageProps) => {
         )}`}
       >
         <ChevronLeftCircle />{' '}
-        <span className="mb-1 text-xl">List All Portofolio</span>
+        <span className="mb-[3px] text-lg tablet:text-xl">
+          List All Portofolio
+        </span>
       </Link>
     </div>
   );
