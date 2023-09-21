@@ -45,12 +45,12 @@ const Docs = async ({ params }: PageProps) => {
         })}`}
       >
         <ChevronLeftCircle />{' '}
-        <span className="text-lg tablet:text-xl mb-[2px]">Back</span>
+        <span className="text-lg tablet:text-xl mb-[1px]">Back</span>
       </Link>
 
       <h1 className="mt-10">{doc.title}</h1>
 
-      <div className="flex flex-col justify-between gap-2 mt-5 laptop:items-center laptop:flex-row">
+      <div className="flex flex-col justify-between w-full gap-2 mt-5 laptop:items-center laptop:flex-row">
         <p className="descriptionBlog">{doc.description}</p>
         <p className="text-[12px] text-gray">Published at {doc.date}</p>
       </div>
@@ -70,7 +70,7 @@ const Docs = async ({ params }: PageProps) => {
         )}`}
       >
         <ChevronLeftCircle />{' '}
-        <span className="mb-[3px] text-lg tablet:text-xl">List All Blog</span>
+        <span className="mb-[1px] text-lg tablet:text-xl">List All Blog</span>
       </Link>
     </div>
   );

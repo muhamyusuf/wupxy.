@@ -46,7 +46,7 @@ const PortoDetail = async ({ params }: PageProps) => {
         })}`}
       >
         <ChevronLeftCircle />{' '}
-        <span className="mb-[2px] tablet:text-xl text-lg">Back</span>
+        <span className="mb-[1px] tablet:text-xl text-lg">Back</span>
       </Link>
 
       <h1 className="mt-10">{doc.title}</h1>
@@ -79,7 +79,7 @@ const PortoDetail = async ({ params }: PageProps) => {
         )}`}
       >
         <ChevronLeftCircle />{' '}
-        <span className="mb-[3px] text-lg tablet:text-xl">
+        <span className="mb-[1px] text-lg tablet:text-xl">
           List All Portofolio
         </span>
       </Link>
